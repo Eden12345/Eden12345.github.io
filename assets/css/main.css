@@ -1628,6 +1628,7 @@
 		background-size: auto, cover;
 		background-attachment: fixed, fixed;
 		background-position: center, center;
+		display: block;
 	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
@@ -3190,6 +3191,7 @@
 				background-size: auto, cover;
 				background-position: center, center;
 				margin-bottom: -6.5em;
+				display: block;
 			}
 
 		}
@@ -3300,6 +3302,7 @@
 			background-size: auto, cover;
 			background-position: center, 0% 30%;
 			margin-bottom: -6.5em;
+			display: block;
 		}
 
 	}
@@ -3521,7 +3524,6 @@
 				.wrapper.spotlight .image img {
 					border-radius: 100%;
 					object-fit: cover;
-					height: 257.516px;
 					width: 100%;
 				}
 
@@ -3791,6 +3793,7 @@
 			background-position: center, center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
+			display: block;
 		}
 
 	}
