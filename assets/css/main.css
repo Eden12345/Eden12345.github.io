@@ -1624,8 +1624,8 @@
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/sunset.jpeg");
-		background-size: auto, cover;
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/fuzzylights.jpeg");
+		background-size: cover;
 		background-attachment: fixed, fixed;
 		background-position: center, center;
 		display: block;
@@ -3187,8 +3187,22 @@
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/sunset.jpg");
-				background-size: auto, cover;
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/fuzzylights.jpg");
+				background-size: cover;
+				background-position: center, center;
+				margin-bottom: -6.5em;
+				display: block;
+			}
+
+		}
+
+		@media screen and (max-width: 1680px) {
+
+			#banner {
+				padding: 7em 0 8.25em 0 ;
+				background-color: #2e3141;
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/fuzzylights.jpg");
+				background-size: cover;
 				background-position: center, center;
 				margin-bottom: -6.5em;
 				display: block;
@@ -3298,8 +3312,8 @@
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/sunset.jpg");
-			background-size: auto, cover;
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/fuzzylights.jpg");
+			background-size: cover;
 			background-position: center, 0% 30%;
 			margin-bottom: -6.5em;
 			display: block;
@@ -3788,8 +3802,8 @@
 
 		#footer {
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/sunset.jpg");
-			background-size: auto, cover;
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/fuzzylights.jpg");
+			background-size: cover;
 			background-position: center, center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
