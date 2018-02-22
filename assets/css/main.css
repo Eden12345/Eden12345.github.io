@@ -48,6 +48,10 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	a:hover, a:active, a:focus {
+  	outline: 0;
+	}
+
 /* Box Model */
 
 	*, *:before, *:after {
