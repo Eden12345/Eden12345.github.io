@@ -1,0 +1,257 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,500");
+
+/* Title font: */
+@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,500");
+/* Paragraph and sub-title font: */
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500");
+
+
+
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	overflow: hidden;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+button {
+	background: none;
+	border: none;
+	font-size: 26px;
+	color: white;
+	cursor: pointer;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding-top: 3px;
+	padding-bottom: 6px;
+	padding-left: 11px;
+	padding-right: 11px;
+}
+
+button:hover {
+	border: 1px solid lightgrey;
+	/* color: lightgrey; */
+}
+
+button:focus {
+	outline: 0;
+}
+
+
+
+
+
+/* STYLING */
+
+body {
+  overflow: scroll;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-image {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: -100;
+  background-image: url("../../images/background.jpeg");
+  background-size: cover;
+}
+
+header {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 4vw;
+  font-weight: 300;
+  color: #F7F7F7;
+}
+
+header p {
+  margin: 2vw;
+  text-align: center;
+}
+
+.main-title {
+  margin-top: -100px;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 4.7vw;
+  color: black;
+}
+
+.sub-title {
+  margin-bottom: 5vw;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2.7vw;
+  color: black;
+}
+
+.gap {
+  height: 80vh;
+}
+
+.main-wrapper {
+  position: absolute;
+  margin-top: 80vh;
+  margin-bottom: 4vw;
+  width: 85vw;
+  padding-top: 2.8vw;
+  padding: 3.3vw;
+  border-radius: 2px;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+main {
+  border-radius: 2px;
+  background-color: #FEFEFE;
+}
+
+section {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .image {
+  border-radius: 50%;
+  width: 50vh;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.title {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3vw;
+  font-weight: 300;
+}
+
+.about {
+  flex-direction: column;
+  padding: 5vh;
+  padding-top: 0px;
+  font-size: 2.5vw;
+}
+
+.about * {
+  margin: 2vh;
+}
+
+#headshot {
+  width: 30vh;
+  height: 30vh;
+  background-image: url("../../images/cropped_head.jpg");
+}
+
+.description {
+  font-size: 1.5vw;
+}
+
+.about-des {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-bottom: 10vh;
+  text-align: center;
+  color: #5B5B5B;
+}
+
+.projects-directional {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.jsequencer {
+  background-color: #C9D4DF;
+}
+
+.jsequencer .image {
+  background-image: url("../../images/jsequencer2.png");
+}
+
+.flexpx {
+  background-color: #F7F7F7;
+}
+
+.flexpx .image {
+  background-image: url("../../images/flexpx.png");
+}
+
+.bestsellers {
+  background-color: #D5DaDD;
+}
+
+.bestsellers .image {
+  background-image: url("../../images/bestsellers.png");
+}
