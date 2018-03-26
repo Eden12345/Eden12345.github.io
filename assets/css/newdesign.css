@@ -93,6 +93,7 @@ button:focus {
 
 body {
   overflow: scroll;
+	scroll-behavior: smooth;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 300;
 
@@ -130,6 +131,10 @@ header {
   color: #F7F7F7;
 }
 
+.top {
+	opacity: 1;
+}
+
 header p {
   margin: 2vw;
   text-align: center;
@@ -137,16 +142,36 @@ header p {
 
 .main-title {
   margin-top: -100px;
+	margin-bottom: 2vh;
   font-family: 'Work Sans', sans-serif;
   font-size: 4.7vw;
   color: black;
 }
 
+nav {
+  margin-bottom: 5vw;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 3vw;
+  color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .sub-title {
   margin-bottom: 5vw;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 2.7vw;
+  font-size: 2vw;
   color: black;
+}
+
+nav a {
+	color: black;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: hsl(0, 0%, 96%);
 }
 
 .gap {
@@ -196,14 +221,14 @@ section .image {
   font-weight: 300;
 }
 
-.about {
+#about {
   flex-direction: column;
   padding: 5vh;
   padding-top: 0px;
   font-size: 2.5vw;
 }
 
-.about * {
+#about * {
   margin: 2vh;
 }
 
@@ -232,26 +257,30 @@ section .image {
   align-items: center;
 }
 
-.jsequencer {
+#jsequencer {
   background-color: #C9D4DF;
 }
 
-.jsequencer .image {
+#jsequencer .image {
   background-image: url("../../images/jsequencer2.png");
 }
 
-.flexpx {
-  background-color: #F7F7F7;
+#flexpx {
+  background-color: hsl(0, 0%, 96%);
 }
 
-.flexpx .image {
+#flexpx .image {
   background-image: url("../../images/flexpx.png");
 }
 
-.bestsellers {
-  background-color: #D5DaDD;
+#bestsellers {
+  background-color: #d3dadf;
 }
 
-.bestsellers .image {
+#bestsellers .image {
   background-image: url("../../images/bestsellers.png");
+}
+
+#contact {
+	background-color: hsl(0, 0%, 93%);
 }

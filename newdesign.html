@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	</head>
 
 
@@ -15,9 +16,14 @@
 
     </div>
 
-    <header class="animated fadeIn">
+    <header class="top">
       <p class="main-title">ETHAN GOODING</p>
-      <p class="sub-title">React • Ruby on Rails • JavaScript • CSS • SQL</p>
+			<nav>
+				<a href="#about" class="about-scroller toscroll">About</a><p>•</p>
+				<a href="#jsequencer" class="toscroll">Projects</a><p>•</p>
+				<a href="images/resume.pdf" target="_blank">Resume</a><p>•</p>
+				<a href="#contact" class="toscroll">Contact</a>
+			</nav>
       <i class="fa fa-angle-double-down animated fadeInUp"></i>
 
       <!-- <aside class="navbar"></aside> -->
@@ -27,28 +33,47 @@
 
     <div class="main-wrapper animated fadeInUp">
       <main>
-        <section class="top about">
+        <section class="page" id="about">
           <p class="title">ABOUT ME</p>
           <div class="image" id="headshot"></div>
-          <p class="description about-des">From DOS games to digital audio workstations, I’ve been interested in computer software for as long as I can remember. My most recent position was at SoundCloud, where I had the invaluable experience of working on internal tools and user-facing features for Copyright Operations at one of the most disruptive media platforms in the history of music technology.
-          <br><br>
-          In order to further increase my understanding of the languages and frameworks used in modern web development, I enrolled in App Academy, which I graduated from this past February. You can see some of my most recent projects that demonstrate my skill set on this site, as well as past collaborative projects I made with other developers and designers.</p>
+					<p class="sub-title">React • Ruby on Rails • JavaScript • HTML5/CSS3 • SQL</p>
+          <p class="description about-des">From DOS games to open-source digital audio workstations, I’ve been interested in computer software for as long as I can remember. My most recent position was at SoundCloud, where I had the invaluable experience of refining internal tools and user-facing features for Copyright Operations at one of the most disruptive media platforms in the tech industry.</p>
           <div class="projects-directional">
             <p class="title">PROJECTS</p>
             <i class="fa fa-angle-double-down animated fadeInUp"></i>
           </div>
         </section>
-        <section class="top jsequencer">
+        <section class="page" id="jsequencer">
           <div class="image"></div>
         </section>
-        <section class="top flexpx">
+        <section class="page" id="flexpx">
           <div class="image"></div>
         </section>
-        <section class="bottom bestsellers">
+        <section class="page" id="bestsellers">
+          <div class="image"></div>
+        </section>
+        <section class="bottom" id="contact">
           <div class="image"></div>
         </section>
       </main>
     </div>
 
+		<script src="assets/js/newdesign.js"></script>
+
+		<script type="text/javascript">
+			$(window).scroll(function(){
+				$(".top").css("opacity", 1 - $(window).scrollTop() / 300);
+			});
+
+			$("a.toscroll").on('click',function(e) {
+        var url = e.target.href;
+        var hash = url.substring(url.indexOf("#")+1);
+        $('body').animate({
+            scrollTop: $('#'+hash).offset().top
+        }, 500);
+        return false;
+      });
+		</script>
   </body>
+
 </html>
