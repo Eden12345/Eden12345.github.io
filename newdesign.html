@@ -19,17 +19,15 @@
     <header class="top">
       <p class="main-title">ETHAN GOODING</p>
 			<nav>
-				<a href="#about" class="about-scroller toscroll">About</a><p>•</p>
-				<a href="#jsequencer" class="toscroll">Projects</a><p>•</p>
+				<a href="#about" class="scroller">About</a><p>•</p>
+				<a href="#jsequencer" class="scroller">Projects</a><p>•</p>
 				<a href="images/resume.pdf" target="_blank">Resume</a><p>•</p>
-				<a href="#contact" class="toscroll">Contact</a>
+				<a href="#contact" class="scroller">Contact</a>
 			</nav>
       <i class="fa fa-angle-double-down animated fadeInUp"></i>
 
       <!-- <aside class="navbar"></aside> -->
     </header>
-
-    <div class="gap"></div>
 
     <div class="main-wrapper animated fadeInUp">
       <main>
@@ -39,7 +37,7 @@
 					<p class="sub-title">React • Ruby on Rails • JavaScript • HTML5/CSS3 • SQL</p>
           <p class="description about-des">From DOS games to open-source digital audio workstations, I’ve been interested in computer software for as long as I can remember. My most recent position was at SoundCloud, where I had the invaluable experience of refining internal tools and user-facing features for Copyright Operations at one of the most disruptive media platforms in the tech industry.</p>
           <div class="projects-directional">
-            <p class="title">PROJECTS</p>
+            <p class="title" id="project-pusher">PROJECTS</p>
             <i class="fa fa-angle-double-down animated fadeInUp"></i>
           </div>
         </section>
@@ -65,12 +63,11 @@
 				$(".top").css("opacity", 1 - $(window).scrollTop() / 300);
 			});
 
-			$("a.toscroll").on('click',function(e) {
-        var url = e.target.href;
-        var hash = url.substring(url.indexOf("#")+1);
-        $('body').animate({
-            scrollTop: $('#'+hash).offset().top
-        }, 500);
+			$("a.scroller").on('click',function(e) {
+        var href = e.target.href;
+        var elementId = href.substring(href.indexOf("#") + 1);
+				var scrollPos = $('#' + elementId).offset().top;
+        window.scrollTo(0, scrollPos)
         return false;
       });
 		</script>
