@@ -217,7 +217,6 @@ main {
 }
 
 section {
-	position: -webkit-sticky;
   position: sticky;
   top: 0;
   height: 100vh;
@@ -226,6 +225,12 @@ section {
   align-items: center;
 	color: hsl(0, 0%, 10%);
 	font-size: 2vw;
+}
+
+@media (max-width:632px) {
+	section {
+		position: relative;
+	}
 }
 
 .title {
