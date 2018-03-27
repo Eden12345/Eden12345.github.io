@@ -126,9 +126,8 @@ header {
   align-items: center;
   justify-content: center;
 
-  font-size: 4vw;
+  font-size: 3.5vw;
   font-weight: 300;
-  color: #F7F7F7;
 }
 
 .top {
@@ -142,10 +141,10 @@ header p {
 
 .main-title {
   margin-top: -100px;
-	margin-bottom: 2vh;
+	margin-bottom: 3vh;
   font-family: 'Work Sans', sans-serif;
   font-size: 4.7vw;
-  color: black;
+  color: hsl(0, 0%, 10%);
 }
 
 nav {
@@ -166,12 +165,34 @@ nav {
 }
 
 nav a {
-	color: black;
+	color: hsl(0, 0%, 10%);
 	text-decoration: none;
 }
 
 nav a:hover {
 	color: hsl(0, 0%, 96%);
+}
+
+nav p {
+	margin: 1vw;
+}
+
+.scroller {
+	text-decoration: none;
+	color: hsl(0, 0%, 10%);
+}
+
+.scroller:hover {
+	color: hsl(0, 0%, 96%);
+}
+
+.white-arrow {
+	text-decoration: none;
+	color: hsl(0, 0%, 96%);
+}
+
+.white-arrow:hover {
+	color: hsl(0, 0%, 20%);
 }
 
 .main-wrapper {
@@ -198,17 +219,9 @@ section {
   width: auto;
 
   display: flex;
+	flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-section .image {
-  border-radius: 50%;
-  width: 50vh;
-  height: 50vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .title {
@@ -217,23 +230,21 @@ section .image {
   font-weight: 300;
 }
 
-.pusher {
-	margin-top: 20vh;
-}
-
 #about {
-  flex-direction: column;
-  padding: 5vh;
-  padding-top: 0px;
+	justify-content: space-between;
   font-size: 2.5vw;
 }
 
-#about * {
-  margin: 2vh;
+.about-sub {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
 }
 
-#project-pusher {
-	margin-top: 10vh;
+.about-sub * {
+  margin: 2vh;
 }
 
 #headshot {
@@ -254,10 +265,40 @@ section .image {
   color: #5B5B5B;
 }
 
-.projects-directional {
+.pusher {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
+	font-size: 2vw;
+	margin-bottom: 4vh;
+}
+
+.pusher .title {
+	margin-bottom: 2vh;
+}
+
+section .image {
+  border-radius: 50%;
+  width: 50vh;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.project {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	flex-wrap: wrap;
+}
+
+.image-description {
+	width: 50vh;
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
@@ -267,6 +308,10 @@ section .image {
 
 #jsequencer .image {
   background-image: url("../../images/jsequencer2.png");
+}
+
+#jsequencer p {
+  color: white
 }
 
 #flexpx {
@@ -281,10 +326,24 @@ section .image {
   background-color: #d3dadf;
 }
 
+#bestsellers p {
+  color: white
+}
+
 #bestsellers .image {
   background-image: url("../../images/bestsellers.png");
 }
 
 #contact {
 	background-color: hsl(0, 0%, 93%);
+	color: white;
+}
+
+#contact a, p {
+	text-decoration: none;
+	color: black;
+}
+
+#contact a:hover {
+	color: white;
 }
