@@ -151,7 +151,7 @@ nav {
   margin-bottom: 5vw;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 3vw;
-  color: black;
+  color: hsl(0, 0%, 10%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -161,7 +161,7 @@ nav {
   margin-bottom: 5vw;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 2vw;
-  color: black;
+  color: hsl(0, 0%, 10%);
 }
 
 nav a {
@@ -184,6 +184,10 @@ nav p {
 
 .scroller:hover {
 	color: hsl(0, 0%, 96%);
+}
+
+.white-hover:hover {
+	color: white;
 }
 
 .white-arrow {
@@ -218,21 +222,24 @@ section {
   height: 100vh;
   width: auto;
 
-  display: flex;
-	flex-direction: column;
-  justify-content: center;
   align-items: center;
+	color: hsl(0, 0%, 10%);
+	font-size: 2vw;
 }
 
 .title {
   font-family: 'Work Sans', sans-serif;
   font-size: 3vw;
   font-weight: 300;
+	color: hsl(0, 0%, 10%);
 }
 
 #about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: space-between;
-  font-size: 2.5vw;
+  font-size: 3vw;
 }
 
 .about-sub {
@@ -254,15 +261,15 @@ section {
 }
 
 .description {
-  font-size: 1.5vw;
+  font-size: 1.7vw;
+	text-align: center;
 }
 
 .about-des {
   margin-left: 10vw;
   margin-right: 10vw;
   margin-bottom: 10vh;
-  text-align: center;
-  color: #5B5B5B;
+	color: hsl(0, 0%, 20%);
 }
 
 .pusher {
@@ -278,6 +285,13 @@ section {
 	margin-bottom: 2vh;
 }
 
+.project-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
 section .image {
   border-radius: 50%;
   width: 50vh;
@@ -285,21 +299,44 @@ section .image {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+	margin: 2vw;
+}
+
+.links a {
+	font-size: 2vw;
+	text-decoration: none;
+	color: white;
+}
+
+.links a:hover {
+	color: hsl(0, 0%, 10%);
 }
 
 .project {
+	height: 100%;
+	width: 100%;
+	/* margin-top: 15vh; */
 	display: flex;
   justify-content: center;
   align-items: center;
 	flex-wrap: wrap;
 }
 
+.lone-arrow {
+	margin-bottom: 5vh;
+}
+
 .image-description {
-	width: 50vh;
+	width: 40vw;
+	margin: 2vw;
 	display: flex;
 	flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.image-description * {
+	margin: 1vw;
 }
 
 #jsequencer {
@@ -322,6 +359,18 @@ section .image {
   background-image: url("../../images/flexpx.png");
 }
 
+#flexpx p {
+	color: hsl(0, 0%, 10%);
+}
+
+.flex-links a {
+	color: hsl(0, 0%, 10%);
+}
+
+.flex-links a:hover {
+	color: white;
+}
+
 #bestsellers {
   background-color: #d3dadf;
 }
@@ -334,16 +383,65 @@ section .image {
   background-image: url("../../images/bestsellers.png");
 }
 
+#contact-pusher .title {
+	color: white;
+}
+
+#contact-pusher .title:hover {
+	color: hsl(0, 0%, 10%);
+}
+
 #contact {
 	background-color: hsl(0, 0%, 93%);
 	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 }
 
-#contact a, p {
+.contact {
+	margin-top: 10vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 3vw;
+}
+
+.contact a, .contact p {
 	text-decoration: none;
-	color: black;
+	color: hsl(0, 0%, 10%);
+	font-size: 2vw;
 }
 
-#contact a:hover {
+.contact a:hover {
 	color: white;
+}
+
+.contact li {
+	margin: 1vw;
+	display: flex;
+	align-items: center;
+}
+
+.contact li i {
+	margin-top: -0.5vw;
+}
+
+.contact li * {
+	margin-left: 0.5vw;
+	margin-right: 0.5vw;
+}
+
+#top-pusher {
+	margin-bottom: 5vh;
+}
+
+.white-bottom {
+	text-decoration: none;
+	color: white;
+}
+
+.white-bottom:hover {
+	color: hsl(0, 0%, 10%);
 }
