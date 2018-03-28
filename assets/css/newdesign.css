@@ -218,6 +218,7 @@ main {
 
 section {
   position: sticky;
+	position: -webkit-sticky;
   top: 0;
   height: 100vh;
   width: auto;
