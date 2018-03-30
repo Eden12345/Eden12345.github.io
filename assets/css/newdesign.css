@@ -136,7 +136,6 @@ header {
 
 header p {
   margin: 2vw;
-  text-align: center;
 }
 
 .main-title {
@@ -269,13 +268,15 @@ section {
 
 .description {
   font-size: 1.7vw;
-	text-align: center;
+	text-align: left;
+	line-height: 1.2;
 }
 
 .about-des {
   margin-left: 10vw;
   margin-right: 10vw;
   margin-bottom: 10vh;
+	text-align: center;
 	color: hsl(0, 0%, 20%);
 }
 
