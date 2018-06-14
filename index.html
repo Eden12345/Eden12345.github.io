@@ -117,7 +117,7 @@
         var href = e.target.href;
         var elementId = href.substring(href.indexOf("#") + 1);
 				var scrollPos = $('#' + elementId).offset().top;
-        window.scrollTo(0, scrollPos)
+				$("body").animate({scrollTop: scrollPos}, (scrollPos * 0.5));
         return false;
       });
 		</script>
