@@ -116,8 +116,10 @@
 			$(".scroller").on('click',function(e) {
         var href = e.target.href;
         var elementId = href.substring(href.indexOf("#") + 1);
+				var currentPos = $("body").scrollTop();
 				var scrollPos = $('#' + elementId).offset().top;
-				$("body").animate({scrollTop: scrollPos}, (scrollPos * 0.5));
+				var timing = Math.abs(scrollPos - currentPos);
+				$("body").animate({scrollTop: scrollPos}, (timing * 0.5));
         return false;
       });
 		</script>
