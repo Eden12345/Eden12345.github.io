@@ -153,13 +153,6 @@ nav {
 
 nav > a {
 	margin: 0 2vh;
-	padding-bottom: .7vh;
-	border-bottom: 0.4vh solid white;
-	transition: color 300ms ease, font-size 300ms ease, border-bottom 300ms ease;
-}
-
-nav > a:hover {
-	border-bottom: 0.5vh solid #4282f0;
 }
 
 .divider {
