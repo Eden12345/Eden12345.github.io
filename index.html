@@ -6,118 +6,148 @@
 	<link rel="stylesheet" href="styles.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 	<link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
-	<script defer src="https://use.fontawesome.com/releases/v4.7.0/js/all.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
-<body>
-	<main class="main-wrapper animated fadeInUp">
-		<section id="top">
-			<div class="">
-				<h1>Ethan Gooding</h1>
-				<nav>
-					<a href="#work" class="scroller">Work</a><p>•</p>
-					<a href="#play" class="scroller">Play</a><p>•</p>
-					<a href="images/resume.pdf" target="_blank">Resume</a><p>•</p>
-					<a href="#contact" class="scroller">Contact</a>
-				</nav>
-				<p>I like making tech, art, and everything in between<p>
-			</div>
-			<a href="#work" class="scroller divider">
-				<span>Work</span>
-				<span class="arrow fa fa-angle-down"></span>
-				<span>
-					<span class="circle filled"></span>
-					<span class="circle filled"></span>
-					<span class="circle filled"></span>
-				</span>
-			</a>
-		</section>
+<body class="animated fadeIn">
+	<div class="main-wrapper">
+		<main>
+			<section class="animated fadeInUp" id="top">
+				<div class="view purple-background header">
+					<h1>Ethan Gooding</h1>
+					<nav>
+						<a href="#work" class="scroller">Work</a><p>•</p>
+						<a href="#play" class="scroller">Play</a><p>•</p>
+						<a href="images/resume.pdf" target="_blank">Resume</a><p>•</p>
+						<a href="#contact" class="scroller">Contact</a>
+					</nav>
+					<p>I like making tech, art, and everything in between<p>
+					</div>
 
-		<section id="work">
-			<div class="link-list">
-				<div class="image-link" id="ghostery">
-					<a href="https://ghostery.com" target="_blank">Ghostery</a>
-				</div>
-				<div class="image-link" id="cobu">
-					<a href="https://www.livecobu.com/" target="_blank">Cobu</a>
-				</div>
-				<div class="image-link" id="soundcloud">
-					<a href="https://soundcloud.com/" target="_blank">SoundCloud</a>
-				</div>
-				<div class="image-link" id="resume">
-					<a href="images/resume.pdf" target="_blank">Resume</a>
-				</div>
-			</div>
+					<div class="divider">
+						<h2>Work</h2>
+						<div class="arrow fa fa-angle-down"></div>
+						<div class="circle-container">
+							<div class="circle"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+						</div>
+						<a href="#work" class="scroller"></a>
+					</div>
+				</section>
 
-			<a href="#play" class="scroller divider">
-				<span>Play</span>
-				<span class="arrow fa fa-angle-down"></span>
-				<span>
-					<span class="circle filled"></span>
-					<span class="circle filled"></span>
-					<span class="circle filled"></span>
-				</span>
-			</a>
-		</section>
+				<section id="work">
+					<div class="view link-list">
+						<div class="image-link ghostery">
+							<div class="link-wrapper">
+								<a href="https://ghostery.com" target="_blank">Ghostery</a>
+							</div>
+						</div>
+						<div class="image-link cobu">
+							<div class="link-wrapper">
+								<a href="https://www.livecobu.com/" target="_blank">Cobu</a>
+							</div>
+						</div>
+						<div class="image-link soundcloud">
+							<div class="link-wrapper">
+								<a href="https://soundcloud.com/" target="_blank">SoundCloud</a>
+							</div>
+						</div>
+						<div class="image-link resume">
+							<div class="link-wrapper">
+								<a href="images/resume.pdf" target="_blank">Resume</a>
+							</div>
+						</div>
+					</div>
 
-		<section id="play">
-			<div class="link-list">
-				<div class="image-link" id="jsequencer">
-					<a href="http://ethangooding.com/JSequencer/" target="_blank">JSequencer</a>
-				</div>
-				<div class="image-link" id="breakup-squad">
-					<a href="https://brooklyn-gamery.itch.io/breakup-squad" target="_blank">Breakup Squad</a>
-				</div>
-				<div class="image-link" id="one-open">
-					<a href="http://ethangooding.com/OneOpen/" target="_blank">OneOpen</a>
-				</div>
-				<div class="image-link" id="github">
-					<a href="https://github.com/Eden12345" target="_blank">GitHub</a>
-				</div>
-			</div>
+					<div class="divider white-bg">
+						<h2>Play</h2>
+						<div class="arrow fa fa-angle-down"></div>
+						<div class="circle-container">
+							<div class="circle filled"></div>
+							<div class="circle"></div>
+							<div class="circle"></div>
+						</div>
+						<a href="#play" class="scroller"></a>
+					</div>
+				</section>
 
-			<a href="#contact" class="scroller divider">
-				<span>Contact Info</span>
-				<span class="arrow fa fa-angle-down"></span>
-				<span>
-					<span class="circle filled"></span>
-					<span class="circle filled"></span>
-					<span class="circle filled"></span>
-				</span>
-			</a>
-		</section>
+				<section id="play">
+					<div class="view link-list">
+						<div class="image-link breakup-squad">
+							<div class="link-wrapper">
+								<a href="https://brooklyn-gamery.itch.io/breakup-squad" target="_blank">Breakup Squad</a>
+							</div>
+						</div>
+						<div class="image-link jsequencer">
+							<div class="link-wrapper">
+								<a href="http://ethangooding.com/JSequencer/" target="_blank">JSequencer</a>
+							</div>
+						</div>
+						<div class="image-link github full-width">
+							<div class="link-wrapper">
+								<a href="https://github.com/Eden12345" target="_blank">GitHub</a>
+							</div>
+						</div>
+					</div>
 
-		<section id="contact">
-			<ul class="contact-info-list">
-				<li><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/ethan-gooding/" target="_blank">LinkedIn</a></li>
-				<li><i class="fa fa-angellist"></i><a href="https://angel.co/ethan-gooding" target="_blank">AngelList</a></li>
-				<li><i class="fa fa-github"></i><a href="https://github.com/Eden12345" target="_blank">GitHub</a></li>
-				<li><i class="fa fa-list"></i><a href="images/resume.pdf" target="_blank">Resume</a></li>
-				<li><i class="fa fa-home"></i><p>Brooklyn, NY</p></li>
-				<li><i class="fa fa-phone"></i><p>203.273.3730</p></li>
-				<li><i class="fa fa-envelope"></i><p>ethangooding@gmail.com</p></li>
-			</ul>
-			<a href="#top" class="scroller divider">
-				<span class="arrow fa fa-angle-up"></span>
-				<span>Back to Top</span>
-				<span>
-					<span class="circle filled"></span>
-					<span class="circle filled"></span>
-					<span class="circle filled"></span>
-				</span>
-			</a>
-		</section>
-	</main>
+					<div class="divider white-bg">
+						<h2>Contact Info</h2>
+						<div class="arrow fa fa-angle-down"></div>
+						<div class="circle-container">
+							<div class="circle filled"></div>
+							<div class="circle filled"></div>
+							<div class="circle"></div>
+						</div>
+						<a href="#contact" class="scroller"></a>
+					</div>
+				</section>
+
+				<section id="contact">
+					<ul class="view purple-background">
+						<li><i class="fa fa-linkedin contact-icon"></i><a href="https://www.linkedin.com/in/ethan-gooding/" target="_blank">LinkedIn</a></li>
+						<li><i class="fa fa-angellist contact-icon"></i><a href="https://angel.co/ethan-gooding" target="_blank">AngelList</a></li>
+						<li><i class="fa fa-github contact-icon"></i><a href="https://github.com/Eden12345" target="_blank">GitHub</a></li>
+						<li><i class="fa fa-list contact-icon"></i><a href="images/resume.pdf" target="_blank">Resume</a></li>
+						<li><i class="fa fa-home"></i><p>Brooklyn, NY</p></li>
+						<li><i class="fa fa-phone"></i><p>203.273.3730</p></li>
+						<li><i class="fa fa-envelope"></i><p>ethangooding@gmail.com</p></li>
+					</ul>
+
+					<div class="divider">
+						<div class="arrow fa fa-angle-up"></div>
+						<h2 class="margin-bottom">Back to Top</h2>
+						<div class="circle-container">
+							<div class="circle filled"></div>
+							<div class="circle filled"></div>
+							<div class="circle filled"></div>
+						</div>
+						<a href="#top" class="scroller"></a>
+					</div>
+				</section>
+			</main>
+	</div>
 
 	<script type="text/javascript">
-		$(".scroller").on('click',function(e) {
+		$(".scroller").on('click', function(e) {
+			e.preventDefault();
+			e.stopPropagation();
+
+			const positions = {
+				top: 0,
+				work: 1,
+				play: 2,
+				contact: 3
+			};
+
 			var href = e.target.href;
 			var elementId = href.substring(href.indexOf("#") + 1);
 			var currentPos = $("body").scrollTop();
-			var scrollPos = $('#' + elementId).offset().top;
+			var scrollPos = positions[elementId] * window.innerHeight;
 			var timing = Math.abs(scrollPos - currentPos);
-			$("body").animate({ scrollTop: scrollPos }, (timing * 0.5));
+
+			$("body").animate({ scrollTop: scrollPos }, timing * 0.2 + 300);
 			return false;
 		});
 	</script>

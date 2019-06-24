@@ -72,3 +72,290 @@ button:hover {
 button:focus {
 	outline: 0;
 }
+
+
+
+
+
+/* CUSTOM CSS */
+
+body {
+	position: absolute;
+	overflow: scroll;
+	scroll-behavior: smooth;
+	font-family: 'Work Sans', sans-serif;
+	font-size: 5vh;
+	font-weight: 500;
+	text-align: center
+}
+
+.main-wrapper {
+	position: absolute;
+}
+
+section {
+	position: sticky;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+@media (max-width:632px) {
+	section {
+		position: relative;
+	}
+}
+
+.view {
+	height: 80vh;
+}
+
+.purple-background {
+	background-color: white;
+	color: #9900ff;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1 {
+	font-size: 12vh;
+}
+
+p {
+	font-size: 2.5vh;
+	font-style: italic;
+}
+
+a {
+	color: #4282f0;
+	text-decoration: none;
+	transition: color 300ms ease, font-size 300ms ease;
+}
+
+a:hover {
+	font-size: 6vh;
+}
+
+nav {
+	margin: 2vh 0 6vh;
+	height: 7vh;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+nav > a {
+	margin: 0 2vh;
+	padding-bottom: .7vh;
+	border-bottom: 0.4vh solid white;
+	transition: color 300ms ease, font-size 300ms ease, border-bottom 300ms ease;
+}
+
+nav > a:hover {
+	border-bottom: 0.5vh solid #4282f0;
+}
+
+.divider {
+	position: relative;
+	background-color: #9900ff;
+	height: 20vh;
+	color: white;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: background-color 300ms ease, color 300ms ease, font-size 300ms ease;
+}
+
+.divider:hover {
+	background-color: white;
+	color: #4282f0;
+	font-size: 6vh;
+}
+
+.divider.white-bg {
+	background: white;
+	color: #9900ff;
+}
+
+.divider.white-bg:hover {
+	color: #4282f0;
+}
+
+.divider > .scroller {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+h2 {
+	display: flex;
+	align-items: flex-end;
+}
+
+.arrow {
+	font-size: 7vh !important;
+	height: 5vh;
+
+	display: flex !important;
+	align-items: center;
+}
+
+.circle-container {
+	width: 11vh;
+	margin: 1vh 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.circle {
+	border: 0.5vh solid #9900ff;
+	border-radius: 2vh;
+	height: 2vh;
+	width: 2vh;
+	transition: border 300ms ease, background-color 300ms ease;
+}
+
+.circle.filled {
+	background-color: #9900ff;
+}
+
+.divider:not(.white-bg) .circle {
+	border: 0.5vh solid white;
+	background-color: #9900ff;
+}
+
+.divider:not(.white-bg) .circle.filled {
+	border: 0.5vh solid white;
+	background-color: white;
+}
+
+.divider:not(.white-bg):hover .circle {
+	border: 0.5vh solid #9900ff;
+	background-color: white;
+}
+
+.divider:not(.white-bg):hover .circle.filled {
+	background-color: #9900ff;
+}
+
+.link-list {
+	color: #1155cc;
+
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.image-link {
+	position: relative;
+	width: 50vw;
+	background-size: cover;
+	background-repeat: no-repeat;
+  background-position: center;
+}
+
+.image-link.full-width {
+	width: 100vw;
+}
+
+.link-wrapper {
+	position: absolute;
+	background-color: rgba(208, 224, 251, 0.7);
+	width: 100%;
+	height: 100%;
+	transition: background-color 300ms ease;
+}
+
+.link-wrapper:hover {
+	background-color: rgba(66, 130, 240, 0.7);
+}
+
+.link-wrapper > a {
+	height: 100%;
+	width: 100%;
+	color: #9900ff;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.link-wrapper > a:hover {
+	color: white;
+}
+
+.ghostery {
+	background-image: url("images/ghostery.png");
+}
+
+.cobu {
+	background-image: url("images/cobu.png");
+}
+
+.soundcloud {
+	background-image: url("images/soundcloud.png");
+}
+
+.resume {
+	background-image: url("images/resume.png");
+}
+
+.jsequencer {
+	background-image: url("images/jsequencer.png");
+}
+
+.breakup-squad {
+	background-image: url("images/breakup-squad.png");
+}
+
+.one-open {
+	background-image: url("images/one-open.png");
+}
+
+.github {
+	background-image: url("images/github.png");
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+li {
+	margin: 2.5vh 0;
+
+	display: flex;
+	align-items: center;
+}
+
+li > p {
+	font-size: 5vh;
+	font-style: normal;
+}
+
+li > i {
+	margin-right: 2vh;
+}
+
+.contact-icon {
+	color: #4282f0;
+}
+
+.margin-bottom {
+	margin-bottom: .5vh;
+}
