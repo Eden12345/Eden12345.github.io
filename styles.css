@@ -66,7 +66,7 @@ button {
 }
 
 button:hover {
-	border: 1px solid light#737373;
+	border: 1px solid light#595959;
 }
 
 button:focus {
@@ -112,7 +112,7 @@ section {
 
 .white-background {
 	background-color: white;
-	color: #737373;
+	color: #595959;
 }
 
 .header {
@@ -132,7 +132,7 @@ p {
 }
 
 a {
-	color: #4282f0;
+	color: #1159d4;
 	text-decoration: none;
 	transition: color 300ms ease, font-size 300ms ease;
 }
@@ -167,11 +167,11 @@ nav.persistent {
 }
 
 nav.persistent > a {
-	color: #737373;
+	color: #595959;
 }
 
 nav.persistent > a:hover {
-	color: #4282f0;
+	color: #1159d4;
 }
 
 nav.persistent.show {
@@ -180,7 +180,7 @@ nav.persistent.show {
 
 .divider {
 	position: relative;
-	background-color: #4282f0;
+	background-color: #1159d4;
 	height: 20vh;
 	color: white;
 
@@ -193,17 +193,17 @@ nav.persistent.show {
 
 .divider:hover {
 	background-color: white;
-	color: #4282f0;
+	color: #1159d4;
 	font-size: 6vh;
 }
 
 .divider.white-bg {
 	background: white;
-	color: #737373;
+	color: #595959;
 }
 
 .divider.white-bg:hover {
-	color: #4282f0;
+	color: #1159d4;
 }
 
 .divider > .scroller {
@@ -237,7 +237,7 @@ h2 {
 }
 
 .circle {
-	border: 0.5vh solid #737373;
+	border: 0.5vh solid #595959;
 	border-radius: 2vh;
 	height: 2vh;
 	width: 2vh;
@@ -245,12 +245,12 @@ h2 {
 }
 
 .circle.filled {
-	background-color: #737373;
+	background-color: #595959;
 }
 
 .divider:not(.white-bg) .circle {
 	border: 0.5vh solid white;
-	background-color: #4282f0;
+	background-color: #1159d4;
 }
 
 .divider:not(.white-bg) .circle.filled {
@@ -259,12 +259,12 @@ h2 {
 }
 
 .divider:not(.white-bg):hover .circle {
-	border: 0.5vh solid #737373;
+	border: 0.5vh solid #595959;
 	background-color: white;
 }
 
 .divider:not(.white-bg):hover .circle.filled {
-	background-color: #737373;
+	background-color: #595959;
 }
 
 .link-list {
@@ -298,13 +298,13 @@ h2 {
 }
 
 .link-wrapper:hover {
-	background-color: rgba(66, 130, 240, 0.9);
+	background-color: rgba(79, 89, 212, 0.9);
 }
 
 .link-wrapper > a {
 	height: 100%;
 	width: 100%;
-	color: #4282f0;
+	color: #1159d4;
 
 	display: flex;
 	justify-content: center;
@@ -371,7 +371,7 @@ li > i {
 }
 
 .contact-icon {
-	color: #4282f0;
+	color: #1159d4;
 }
 
 .margin-bottom {
