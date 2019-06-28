@@ -168,10 +168,12 @@ nav.persistent {
 }
 
 nav.persistent > a {
+	font-size: 4vh;
 	color: #595959;
 }
 
 nav.persistent > a:hover {
+	font-size: 5vh;
 	color: #1159d4;
 }
 
