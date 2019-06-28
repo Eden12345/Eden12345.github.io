@@ -14,7 +14,7 @@
 	<div class="main-wrapper">
 		<main>
 			<section class="animated fadeInUp" id="top">
-				<div class="view purple-background header">
+				<div class="view white-background header">
 					<h1>Ethan Gooding</h1>
 					<nav>
 						<a href="#work" class="scroller">Work</a><p>•</p>
@@ -37,10 +37,12 @@
 				</section>
 
 				<section id="work">
-					<div class="view link-list">
-						<div class="image-link ghostery">
+					<div class="bump"></div>
+
+					<div class="view link-list with-nav">
+						<div class="image-link soundcloud">
 							<div class="link-wrapper">
-								<a href="https://ghostery.com" target="_blank">Ghostery</a>
+								<a href="https://soundcloud.com/" target="_blank">SoundCloud</a>
 							</div>
 						</div>
 						<div class="image-link cobu">
@@ -48,14 +50,9 @@
 								<a href="https://www.livecobu.com/" target="_blank">Cobu</a>
 							</div>
 						</div>
-						<div class="image-link soundcloud">
+						<div class="image-link ghostery full-width">
 							<div class="link-wrapper">
-								<a href="https://soundcloud.com/" target="_blank">SoundCloud</a>
-							</div>
-						</div>
-						<div class="image-link resume">
-							<div class="link-wrapper">
-								<a href="images/resume.pdf" target="_blank">Resume</a>
+								<a href="https://ghostery.com" target="_blank">Ghostery</a>
 							</div>
 						</div>
 					</div>
@@ -73,7 +70,9 @@
 				</section>
 
 				<section id="play">
-					<div class="view link-list">
+					<div class="bump"></div>
+
+					<div class="view link-list with-nav">
 						<div class="image-link jsequencer">
 							<div class="link-wrapper">
 								<a href="http://ethangooding.com/JSequencer/" target="_blank">JSequencer</a>
@@ -104,11 +103,12 @@
 				</section>
 
 				<section id="contact">
-					<ul class="view purple-background">
+					<div class="bump"></div>
+
+					<ul class="view white-background with-nav">
 						<li><i class="fa fa-linkedin contact-icon"></i><a href="https://www.linkedin.com/in/ethan-gooding/" target="_blank">LinkedIn</a></li>
 						<li><i class="fa fa-angellist contact-icon"></i><a href="https://angel.co/ethan-gooding" target="_blank">AngelList</a></li>
 						<li><i class="fa fa-github contact-icon"></i><a href="https://github.com/Eden12345" target="_blank">GitHub</a></li>
-						<li><i class="fa fa-list contact-icon"></i><a href="images/resume.pdf" target="_blank">Resume</a></li>
 						<li><i class="fa fa-home"></i><p>Brooklyn, NY</p></li>
 						<li><i class="fa fa-phone"></i><p>203.273.3730</p></li>
 						<li><i class="fa fa-envelope"></i><p>ethangooding@gmail.com</p></li>
@@ -125,11 +125,18 @@
 						<a href="#top" class="scroller"></a>
 					</div>
 				</section>
+
+				<nav class="persistent">
+					<a href="#work" class="scroller">Work</a><p>•</p>
+					<a href="#play" class="scroller">Play</a><p>•</p>
+					<a href="images/resume.pdf" target="_blank">Resume</a><p>•</p>
+					<a href="#contact" class="scroller">Contact</a>
+				</nav>
 			</main>
 	</div>
 
 	<script type="text/javascript">
-		$(".scroller").on('click', function(e) {
+		$('.scroller').on('click', function(e) {
 			e.preventDefault();
 			e.stopPropagation();
 
@@ -141,14 +148,29 @@
 			};
 
 			var href = e.target.href;
-			var elementId = href.substring(href.indexOf("#") + 1);
-			var currentPos = $("body").scrollTop();
+			var elementId = href.substring(href.indexOf('#') + 1);
+			var currentPos = $('body').scrollTop();
 			var scrollPos = positions[elementId] * window.innerHeight;
 			var timing = Math.abs(scrollPos - currentPos);
 
-			$("body").animate({ scrollTop: scrollPos }, timing * 0.2 + 300);
+			$('body').animate({ scrollTop: scrollPos }, timing * 0.2 + 300);
 			return false;
 		});
+
+		$(window).on('scroll', function(e) {
+			console.log('here');
+			if ($('body').scrollTop() > $(window).height() * 0.8) {
+				const persistentNav = $('.persistent');
+				if (!persistentNav.hasClass('show')) {
+					persistentNav.addClass('show');
+				}
+			} else {
+				const persistentNav = $('.persistent')
+				if (persistentNav.hasClass('show')) {
+					persistentNav.removeClass('show');
+				}
+			}
+		})
 	</script>
 </body>
 
