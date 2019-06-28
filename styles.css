@@ -92,11 +92,6 @@ body {
 
 .main-wrapper {
 	position: absolute;
-	overflow-x: hidden;
-}
-
-main {
-	overflow-x: hidden;
 }
 
 section {
@@ -105,7 +100,7 @@ section {
 	top: 0;
 	width: 100vw;
 	height: 100vh;
-	padding:
+	overflow-x: hidden;
 }
 
 .bump {
@@ -204,7 +199,7 @@ nav.persistent.show {
 }
 
 .divider.white-bg {
-	background: white;
+	background-color: white;
 	color: #595959;
 }
 
@@ -385,11 +380,73 @@ li > i {
 }
 
 @media (max-width:632px) {
-	.persistent, .bump {
+	/* .persistent, .bump {
 		display: none;
-	}
+	} */
 
 	.with-nav {
-		height: 80vh
+		height: 72vh;
+	}
+
+	.image-link {
+		width: 100vw;
+	}
+
+	li > p, li > a {
+		font-size: 3vh;
+	}
+
+	li > a:hover {
+		font-size: 3vh;
+	}
+
+	a:hover {
+		font-size: 5vh;
+	}
+
+	nav.persistent {
+		height: 8vh;
+	}
+
+	.bump {
+		height: 8vh;
+	}
+
+	nav.persistent > a {
+		font-size: 3vh;
+		margin: 0 1vh;
+	}
+
+	nav.persistent > a:hover {
+		font-size: 3vh;
+		color: #595959;
+	}
+
+	.divider:hover {
+		background-color: #1159d4;
+		color: white;
+		font-size: 5vh;
+	}
+
+	.divider.white-bg:hover {
+		background-color: white;
+		color: #595959;
+	}
+
+	.divider:not(.white-bg):hover .circle {
+		border: 0.5vh solid white;
+		background-color: #1159d4;
+	}
+
+	.divider:not(.white-bg):hover .circle.filled {
+		background-color: white;
+	}
+
+	.link-wrapper:hover {
+		background-color: rgba(204, 204, 204, 0.9);
+	}
+
+	.link-wrapper > a:hover {
+		color: #1159d4;
 	}
 }
