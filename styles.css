@@ -81,7 +81,8 @@ button:focus {
 
 body {
 	position: absolute;
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	scroll-behavior: smooth;
 	font-family: 'DM Sans', sans-serif;
 	font-size: 5vh;
@@ -91,6 +92,11 @@ body {
 
 .main-wrapper {
 	position: absolute;
+	overflow-x: hidden;
+}
+
+main {
+	overflow-x: hidden;
 }
 
 section {
