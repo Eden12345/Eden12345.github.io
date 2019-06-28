@@ -380,10 +380,6 @@ li > i {
 }
 
 @media (max-width:632px) {
-	/* .persistent, .bump {
-		display: none;
-	} */
-
 	.with-nav {
 		height: 72vh;
 	}
