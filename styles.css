@@ -105,6 +105,8 @@ section {
 
 .bump {
 	height: 9vh;
+	width: 100vw;
+	background-color: white;
 }
 
 .view {
@@ -186,6 +188,7 @@ nav.persistent.show {
 	background-color: #1159d4;
 	height: 20vh;
 	color: white;
+	font-size: 4vh;
 
 	display: flex;
 	flex-direction: column;
@@ -197,7 +200,7 @@ nav.persistent.show {
 .divider:hover {
 	background-color: white;
 	color: #1159d4;
-	font-size: 6vh;
+	font-size: 5vh;
 }
 
 .divider.white-bg {
@@ -223,8 +226,9 @@ h2 {
 }
 
 .arrow {
-	font-size: 7vh !important;
+	font-size: 6vh !important;
 	height: 5vh;
+	margin: 0;
 
 	display: flex !important;
 	align-items: center;
@@ -271,6 +275,9 @@ h2 {
 }
 
 .link-list {
+	background-color: white;
+	padding: 0 9vh 0;
+
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
@@ -282,14 +289,14 @@ h2 {
 
 .image-link {
 	position: relative;
-	width: 50vw;
+	min-width: 50%;
 	background-size: cover;
 	background-repeat: no-repeat;
   background-position: center;
 }
 
 .image-link.full-width {
-	width: 100vw;
+	width: 100%;
 }
 
 .link-wrapper {
@@ -377,13 +384,25 @@ li > i {
 	color: #1159d4;
 }
 
-.margin-bottom {
-	margin-bottom: .5vh;
+.add-margin {
+	margin: .1vh 0 .9vh;
 }
 
 @media (max-width:632px) {
+	section {
+		position: relative;
+	}
+
+	.persistent, .bump {
+		display: none;
+	}
+
 	.with-nav {
-		height: 72vh;
+		height: 80vh;
+	}
+
+	.link-list {
+		padding: 0;
 	}
 
 	.image-link {
@@ -400,14 +419,6 @@ li > i {
 
 	a:hover {
 		font-size: 5vh;
-	}
-
-	nav.persistent {
-		height: 8vh;
-	}
-
-	.bump {
-		height: 8vh;
 	}
 
 	nav.persistent > a {
