@@ -150,14 +150,26 @@
 			var href = e.target.href;
 			var elementId = href.substring(href.indexOf('#') + 1);
 			var currentPos = $('body').scrollTop();
-			var scrollPos = positions[elementId] * window.innerHeight;
-			var timing = Math.abs(scrollPos - currentPos);
 
+			var mobile;
+			if (
+				/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+			) {
+				mobile = true;
+			} else {
+				mobile = false;
+			}
+			var idx = positions[elementId];
+			var scrollPos = mobile ? screen.height * idx : window.innerHeight * idx;
+
+			var timing = Math.abs(scrollPos - currentPos);
 			$('body').animate({ scrollTop: scrollPos }, timing * 0.2 + 300);
 			return false;
 		});
 
 		$(window).on('scroll', function(e) {
+			if (window.innerHeight < 632) { return; }
+
 			console.log('here');
 			if ($('body').scrollTop() > $(window).height() * 0.8) {
 				const persistentNav = $('.persistent');
