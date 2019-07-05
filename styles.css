@@ -434,7 +434,7 @@ li > i {
 	.divider:hover {
 		background-color: #1159d4;
 		color: white;
-		font-size: 5vh;
+		font-size: 4vh;
 	}
 
 	.divider.white-bg:hover {
