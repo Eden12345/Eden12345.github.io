@@ -161,7 +161,7 @@
 			}
 			var idx = positions[elementId];
 			var scrollPos = mobile
-				? $('#work').height * idx
+				? $('#work').height() * idx
 				: window.innerHeight * idx;
 
 			var timing = Math.abs(scrollPos - currentPos);
