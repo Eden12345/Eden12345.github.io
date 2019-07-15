@@ -170,7 +170,7 @@
 		});
 
 		$(window).on('scroll', function(e) {
-			if (window.innerHeight < 632) { return; }
+			if (window.innerWidth < 632) { return; }
 
 			console.log('here');
 			if ($('body').scrollTop() > $(window).height() * 0.8) {
