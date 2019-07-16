@@ -1,6 +1,18 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700");
+/* @import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700"); */
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,500,600,700");
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Poiret+One:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Varela:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Palanquin:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Cabin+Sketch:300,400,500,600,700");
+@import url("https://fonts.googleapis.com/css?family=Reem+Kufi:300,400,500,600,700"); */
 
 /* RESET */
 
@@ -84,7 +96,7 @@ body {
 	overflow-y: scroll;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
-	font-family: 'DM Sans', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 5vh;
 	font-weight: 500;
 	text-align: center
@@ -95,6 +107,7 @@ body {
 }
 
 section {
+	background: linear-gradient(white, #D3D3D3);
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -106,7 +119,6 @@ section {
 .bump {
 	height: 9vh;
 	width: 100vw;
-	background-color: white;
 }
 
 .view {
@@ -114,7 +126,6 @@ section {
 }
 
 .white-background {
-	background-color: white;
 	color: #595959;
 }
 
@@ -135,7 +146,7 @@ p {
 }
 
 a {
-	color: #1159d4;
+	color: #47669d;
 	text-decoration: none;
 	transition: color 300ms ease, font-size 300ms ease;
 }
@@ -164,7 +175,6 @@ nav.persistent {
 	margin: 0;
 	width: 100vw;
 	height: 9vh;
-	background-color: white;
 	opacity: 0;
 	transition: opacity 300ms ease;
 }
@@ -176,7 +186,7 @@ nav.persistent > a {
 
 nav.persistent > a:hover {
 	font-size: 5vh;
-	color: #1159d4;
+	color: #47669d;
 }
 
 nav.persistent.show {
@@ -185,7 +195,7 @@ nav.persistent.show {
 
 .divider {
 	position: relative;
-	background-color: #1159d4;
+	background-color: rgba(71, 102, 157, 0.6);
 	height: 20vh;
 	color: white;
 	font-size: 4vh;
@@ -198,18 +208,18 @@ nav.persistent.show {
 }
 
 .divider:hover {
-	background-color: white;
-	color: #1159d4;
+	background-color: transparent;
+	color: #47669d;
 	font-size: 5vh;
 }
 
 .divider.white-bg {
-	background-color: white;
+	background-color: transparent;
 	color: #595959;
 }
 
 .divider.white-bg:hover {
-	color: #1159d4;
+	color: #47669d;
 }
 
 .divider > .scroller {
@@ -257,7 +267,6 @@ h2 {
 
 .divider:not(.white-bg) .circle {
 	border: 0.5vh solid white;
-	background-color: #1159d4;
 }
 
 .divider:not(.white-bg) .circle.filled {
@@ -267,7 +276,6 @@ h2 {
 
 .divider:not(.white-bg):hover .circle {
 	border: 0.5vh solid #595959;
-	background-color: white;
 }
 
 .divider:not(.white-bg):hover .circle.filled {
@@ -275,7 +283,6 @@ h2 {
 }
 
 .link-list {
-	background-color: white;
 	padding: 0 9vh 0;
 
 	display: flex;
@@ -308,13 +315,13 @@ h2 {
 }
 
 .link-wrapper:hover {
-	background-color: rgba(79, 89, 212, 0.9);
+	background-color: rgba(71, 102, 157, 0.9);
 }
 
 .link-wrapper > a {
 	height: 100%;
 	width: 100%;
-	color: #1159d4;
+	color: #47669d;
 
 	display: flex;
 	justify-content: center;
@@ -381,7 +388,7 @@ li > i {
 }
 
 .contact-icon {
-	color: #1159d4;
+	color: #47669d;
 }
 
 .add-margin {
@@ -432,9 +439,14 @@ li > i {
 	}
 
 	.divider:hover {
-		background-color: #1159d4;
+		background-color: rgba(71, 102, 157, 0.6);
 		color: white;
 		font-size: 4vh;
+	}
+
+	.divider.white-bg {
+		background-color: white;
+
 	}
 
 	.divider.white-bg:hover {
@@ -444,7 +456,6 @@ li > i {
 
 	.divider:not(.white-bg):hover .circle {
 		border: 0.5vh solid white;
-		background-color: #1159d4;
 	}
 
 	.divider:not(.white-bg):hover .circle.filled {
@@ -456,6 +467,6 @@ li > i {
 	}
 
 	.link-wrapper > a:hover {
-		color: #1159d4;
+		color: #47669d;
 	}
 }
