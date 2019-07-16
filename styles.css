@@ -372,15 +372,39 @@ ul {
 }
 
 li {
-	margin: 2.5vh 0;
+	margin: 1.6vh 0;
 
 	display: flex;
 	align-items: center;
 }
 
-li > p {
-	font-size: 5vh;
+li > a, li > p {
+	font-size: 4vh;
 	font-style: normal;
+}
+
+li > i {
+	padding-bottom: 1.2vh;
+}
+
+#linkedin {
+	padding-bottom: 1.6vh;
+}
+
+#github {
+	padding-bottom: 1.1vh;
+}
+
+#phone {
+	padding-bottom: .2vh;
+}
+
+#email {
+	padding-bottom: 1vh;
+}
+
+li > a:hover {
+	font-size: 5vh;
 }
 
 li > i {
@@ -416,12 +440,16 @@ li > i {
 		width: 100vw;
 	}
 
+	li {
+		margin: 2vh 0;
+	}
+
 	li > p, li > a {
-		font-size: 3vh;
+		font-size: 3.4vh;
 	}
 
 	li > a:hover {
-		font-size: 3vh;
+		font-size: 3.4vh;
 	}
 
 	a:hover {
