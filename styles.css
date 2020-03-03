@@ -1,4 +1,4 @@
-@import url(font-awesome.min.css);
+/* @import url(font-awesome.min.css); */
 /* @import url("https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:300,400,500,600,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700"); */
@@ -177,6 +177,7 @@ nav.persistent {
 	height: 9vh;
 	opacity: 0;
 	transition: opacity 300ms ease;
+	pointer-events: none;
 }
 
 nav.persistent > a {
@@ -191,6 +192,7 @@ nav.persistent > a:hover {
 
 nav.persistent.show {
 	opacity: 1;
+	pointer-events: auto;
 }
 
 .divider {

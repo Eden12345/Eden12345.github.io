@@ -110,7 +110,6 @@
 						<li><i class="fa fa-angellist contact-icon"></i><a href="https://angel.co/ethan-gooding" target="_blank">AngelList</a></li>
 						<li><i class="fa fa-github contact-icon" id="github"></i><a href="https://github.com/Eden12345" target="_blank">GitHub</a></li>
 						<li><i class="fa fa-home"></i><p>Brooklyn, NY</p></li>
-						<li><i class="fa fa-phone" id="phone"></i><p>203.273.3730</p></li>
 						<li><i class="fa fa-envelope" id="email"></i><p>ethangooding@gmail.com</p></li>
 					</ul>
 
@@ -172,7 +171,6 @@
 		$(window).on('scroll', function(e) {
 			if (window.innerWidth < 632) { return; }
 
-			console.log('here');
 			if ($('body').scrollTop() > $(window).height() * 0.8) {
 				const persistentNav = $('.persistent');
 				if (!persistentNav.hasClass('show')) {
