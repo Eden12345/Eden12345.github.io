@@ -304,10 +304,6 @@ h2 {
   background-position: center;
 }
 
-.image-link.full-width {
-	width: 100%;
-}
-
 .link-wrapper {
 	position: absolute;
 	background-color: rgba(204, 204, 204, 0.9);
@@ -332,6 +328,10 @@ h2 {
 
 .link-wrapper > a:hover {
 	color: white;
+}
+
+.dashlane {
+	background-image: url("images/dashlane.png");
 }
 
 .ghostery {
