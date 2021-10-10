@@ -330,16 +330,16 @@ h2 {
 	color: white;
 }
 
+.athenascope {
+	background-image: url("images/athenascope.png");
+}
+
 .dashlane {
 	background-image: url("images/dashlane.png");
 }
 
 .ghostery {
 	background-image: url("images/ghostery.png");
-}
-
-.cobu {
-	background-image: url("images/cobu.png");
 }
 
 .soundcloud {
