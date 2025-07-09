@@ -156,7 +156,7 @@ a:hover {
 }
 
 nav {
-	margin: 2vh 0 6vh;
+	margin: 4vh 0 6vh;
 	height: 7vh;
 
 	display: flex;
@@ -362,8 +362,8 @@ h2 {
 	background-image: url("images/one-open.png");
 }
 
-.react-native-animations {
-	background-image: url("images/react-native-animations.png");
+.gug {
+	background-image: url("images/gug.jpeg");
 }
 
 ul {
@@ -456,6 +456,10 @@ li > i {
 
 	a:hover {
 		font-size: 5vh;
+	}
+
+	nav {
+		margin-top: 8vh;
 	}
 
 	nav.persistent > a {
